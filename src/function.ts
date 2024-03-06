@@ -40,3 +40,14 @@ let res = minus(10,7); // type of res will be exact type of
 // res = "dinomanh";// Error because res already declared as number type
 
 // If function not have key "return", it will return void type
+
+
+// Type Alias: a void reapted code when defined argument in function repeatedly
+type StringOrNum = string|number;
+type objWithName = {name:string,uid:StringOrNum}
+
+const greetHello = (userId:StringOrNum,user:objWithName) =>{
+    console.log(userId,user);
+}
+
+

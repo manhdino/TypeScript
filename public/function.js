@@ -25,7 +25,6 @@ const minus = (a, b) => {
     return a - b;
 };
 let res = minus(10, 7); // type of res will be exact type of
-// return value of return a - b;
-// In this case res will be number type
-// res = "dinomanh";// Error because res already declared as number type
-// If function not have key "return", it will return void type
+const greetHello = (userId, user) => {
+    console.log(userId, user);
+};
