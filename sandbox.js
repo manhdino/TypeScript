@@ -63,3 +63,33 @@ console.log('object ninja', ninja);
 //     age:24,
 //     isAdmin:false,
 // };
+//Explicit Types
+// We want to initialize a variable without giving it a value
+// When we want to give the value in the future 
+var str;
+var statusCode;
+var isLoggedIn;
+// age = 'Dinomanh'; // Error 
+// isLoggedIn = false; // Error 
+//Arrays 
+var ninjas = []; // array of strings
+// ninjas = [10,20]; // Error
+// If you don't initialize ninjas as a empty array 
+// then you can't use methods push because it's undefined not empty string
+// mixed array --> use Union Types: (string|number)
+var mixedArr = [];
+mixedArr.push("hello world"); //OK
+mixedArr.push(20); //OK
+//mixedArr.push(false); // Error
+console.log(mixedArr);
+// Unions Type for variable
+var userId;
+userId = "12343";
+userId = 1234;
+// userId = false; // Error
+//Unions Type for an Object
+var ninjaOne;
+ninjaOne = { name: "Yoshi", age: 30 };
+// ninjaOne = "Yoshi"; // Error beacuse it's an object
+var ninjaTwo;
+ninjaTwo = { name: "Yoshi", age: 24, isAdmin: false };
