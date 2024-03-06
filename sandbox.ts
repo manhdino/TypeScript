@@ -130,4 +130,24 @@ let ninjaTwo: {
 ninjaTwo = {name:"Yoshi", age:24,isAdmin:false}
 
 
+// Dynamic(any) Types
+// This variable would be any type in the future
+// Any point of time you can change  type too
+let ageAny: any = 25;
+console.log(ageAny);
+ageAny = "Dinomanh"; 
+console.log(ageAny);
+ageAny = {name:"Dinomanh"};
+console.log(ageAny);
 
+let mixedAnyArr: any[] = [];
+mixedAnyArr.push(5);
+mixedAnyArr.push("dinomanh");
+mixedAnyArr.push(true);
+console.log(mixedAnyArr);
+
+let ninjaAny: {name:any,age: any,isAdmin:any}
+ninjaAny = {name:"Yoshi",age:25,isAdmin:false};
+console.log(ninjaAny);
+ninjaAny = {name:25,age:"Yoshi",isAdmin:false};
+console.log(ninjaAny);
