@@ -151,3 +151,6 @@ ninjaAny = {name:"Yoshi",age:25,isAdmin:false};
 console.log(ninjaAny);
 ninjaAny = {name:25,age:"Yoshi",isAdmin:false};
 console.log(ninjaAny);
+
+//tsc --init : Initialized tsconfig.json
+
