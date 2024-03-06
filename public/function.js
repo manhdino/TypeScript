@@ -28,3 +28,23 @@ let res = minus(10, 7); // type of res will be exact type of
 const greetHello = (userId, user) => {
     console.log(userId, user);
 };
+//Function Signature: describe the general structure of function
+// what arguments or type of data returns
+let greetSignature;
+greet = (name, message) => {
+    console.log(`${name} says ${message}`);
+};
+let calc;
+calc = (numOne, numTwo, operator) => {
+    if (operator === 'add') {
+        return numOne + numTwo;
+    }
+    else {
+        return numOne - numTwo;
+    }
+};
+let logDetails;
+logDetails = (ninja) => {
+    console.log(`${ninja.name} is ${ninja.age} years old`);
+};
+logDetails({ name: "Dinomanh", age: 34 });

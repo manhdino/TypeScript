@@ -51,3 +51,31 @@ const greetHello = (userId:StringOrNum,user:objWithName) =>{
 }
 
 
+//Function Signature: describe the general structure of function
+// what arguments or type of data returns
+let greetSignature: (a:string,b:string) =>void;
+
+greet = (name:string,message:string) =>{
+    console.log(`${name} says ${message}`);
+}
+
+let calc: (a:number,b:number,c:string) => number;
+calc = (numOne:number,numTwo:number,operator:string) =>{
+   if(operator === 'add'){
+    return numOne + numTwo;
+   }else{
+    return numOne - numTwo;
+   }
+}
+
+let logDetails: (obj:{name:string,age:number}) =>void
+
+type person = {name:string,age:number};
+
+logDetails = (ninja:person) =>{
+    console.log(`${ninja.name} is ${ninja.age} years old`);
+}
+
+logDetails({name:"Dinomanh",age:34});
+
+
