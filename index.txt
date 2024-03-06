@@ -1,0 +1,10 @@
++ TypeScript 
+   + Browner don't understand TS like JS so when we write TS we need complile it down
+   into JS 
+   + Allow to use strict type:
+      + If I declare a variable in typescript to be a certain type like a number 
+      + I then can't change that type later running that variable to a string or a boolean or something else
+      + That means that all of the error checking process and debugging of our code becomes a little bit easier and it
+      + javascript in contrast to that uses dynamic types where variables can change types at any point and that
+       could potentially lead to more errors
+
