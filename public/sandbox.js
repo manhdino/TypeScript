@@ -6,12 +6,12 @@ console.log(username);
 const inputs = document.querySelectorAll("input");
 console.log(inputs);
 // compile typescript to javascript
-// tsc sandbox.ts
-// tsc sandbox.ts -w : auto compile TS down to JS when save
+// tsc sandbox.ts 
+// tsc sandbox.ts -w : auto compile TS down to JS when save 
 // inputs.forEach(input => {
 //     console.log(input);
 // });
-//Type Basics
+//Type Basics 
 let char = "mario";
 let age = 30;
 let isAdmin = true;
@@ -27,37 +27,37 @@ isAdmin = false;
 // }
 // console.log(circle('Hello world')); // Not Error -> return NaN: Not a Number
 const circle = (diameter) => {
-  return diameter * Math.PI;
+    return diameter * Math.PI;
 };
 console.log(circle(7.5)); // Show Error if pass string argument
 //If Error Occured in TS. It won't complied down to JS
-//Object & Arrays
-//Arrays
-let names = ["manh", "minh", "hoang"];
-names.push("kien"); //OK
+//Object & Arrays 
+//Arrays 
+let names = ['manh', 'minh', 'hoang'];
+names.push('kien'); //OK
 //names.push(2); //Argument of type 'number' is not assignable to parameter of type 'string'
 let numbers = [1, 2, 3, 4, 5];
 // umbers.push("dinomanh");//Argument of type 'string' is not assignable to parameter of type 'number'
 //mixed arrays
-let mixed = ["ken", 4, "dinomanh", 8, 9, true];
+let mixed = ['ken', 4, 'dinomanh', 8, 9, true];
 mixed.push("mixed"); //OK
 mixed.push(9); //OK
 mixed.push(false); //OK
-mixed[0] = 3; //OK
-console.log("mixed: ", mixed);
+mixed[0] = 3; //OK 
+console.log('mixed: ', mixed);
 //Objects
 let ninja = {
-  name: "marios",
-  age: 24,
-  isAdmin: false,
-  addresse: "HN",
+    name: "marios",
+    age: 24,
+    isAdmin: false,
+    addresse: "HN"
 };
 //ninja.name = 24;// Argument of type 'string' is not assignable to parameter of type 'number'
 ninja.age = 40;
-console.log("object ninja", ninja);
+console.log('object ninja', ninja);
 //add extra properties
-// ninja.skill = ['Fighting','Sneaking']; //Error
-// When you overwrite object you must add full properties
+// ninja.skill = ['Fighting','Sneaking']; //Error 
+// When you overwrite object you must add full properties 
 // Error missing addresses properties
 // ninja = {
 //     name: "marios",
@@ -66,16 +66,16 @@ console.log("object ninja", ninja);
 // };
 //Explicit Types
 // We want to initialize a variable without giving it a value
-// When we want to give the value in the future
+// When we want to give the value in the future 
 let str;
 let statusCode;
 let isLoggedIn;
-// age = 'Dinomanh'; // Error
-// isLoggedIn = false; // Error
-//Arrays
+// age = 'Dinomanh'; // Error 
+// isLoggedIn = false; // Error 
+//Arrays 
 let ninjas = []; // array of strings
 // ninjas = [10,20]; // Error
-// If you don't initialize ninjas as a empty array
+// If you don't initialize ninjas as a empty array 
 // then you can't use methods push because it's undefined not empty string
 // mixed array --> use Union Types: (string|number)
 let mixedArr = [];
@@ -114,5 +114,3 @@ console.log(ninjaAny);
 ninjaAny = { name: 25, age: "Yoshi", isAdmin: false };
 console.log(ninjaAny);
 //tsc --init : Initialized tsconfig.json
-
-console.log("Testing 1 2 3");
